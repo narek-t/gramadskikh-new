@@ -1,0 +1,388 @@
+@media screen and (max-width: 1500px) {
+	.gallery__list-item {
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.item .back-to-city a {
+		font-size: 55px;
+	}
+	.item .item-description__inner {
+		margin-top: 20px;
+	}
+	.item .item-description__inner h1 {
+		font-size: 30px;
+	}
+	.item .item-description__inner {
+		padding: 20px;
+	}
+	.item .item-description .order-btn {
+		height: 60px;
+		line-height: 62px;
+		width: 165px;
+	}
+	.item-description-side {
+		max-width: 590px;
+	}
+	.item .item-img {
+		margin-right: 470px;
+	}
+	.item .back-to-city a {
+		padding-left: 40px;
+	}
+	.item .back-to-city a:before {
+		width: 18px;
+		height: 33px;
+		top: 14px;
+	}
+}
+
+
+
+@media screen and (max-width: 1200px) {
+	.container {
+		padding: 0 15px;
+	}
+	.about-bg {
+		background: url(../img/about-bg.png) right -200px top 100px no-repeat;
+	}
+	.video-bg {
+		right: -200px;
+		margin-top: -300px;
+		video {
+			width: 900px;
+		}
+	}
+	.city:nth-child(4n+1) .city-img.small-img {
+		left: 15px;
+		max-width: 500px;
+		margin-right: 0;
+	}
+	.city:nth-child(4n+1) .city-img.big-img {
+		right: 15px;
+		margin-left: 0;
+		max-width: 780px;
+	}
+	.city:nth-child(4n+1) .link-to-city {
+		left: 10%;
+	}
+	.city:nth-child(4n+2) .city-img.big-img {
+		margin-right: 0;
+		left: 15px;
+		max-width: 780px;
+	}
+	.city:nth-child(4n+2) .city-img.small-img {
+		margin-left: 0;
+		max-width: 500px;
+		right: 15px;
+	}
+	.city:nth-child(4n+2) .link-to-city {
+		right: 10%;
+	}
+	.city:nth-child(4n+3) .city-img.small-img {
+		right: 15px;
+		margin-left: 0;
+		max-width: 500px;
+	}
+	.city:nth-child(4n+3) .city-img.big-img {
+		left: 15px;
+		margin-right: 0;
+		max-width: 780px;
+	}
+	.city:nth-child(4n+3) .link-to-city {
+		right: 10%;
+	}
+	.city:nth-child(4n+4) .city-img.small-img {
+		left: 15px;
+		margin-right: 0;
+		max-width: 500px;
+	}
+	.city:nth-child(4n+4) .city-img.big-img {
+		right: 15px;
+		margin-left: 0;
+		max-width: 780px;
+	}
+	.city:nth-child(4n+4) .link-to-city {
+		left: 10%;
+	}
+	.item-description-side {
+		right: 15px;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	.contact-list li {
+		margin-right: 40px;
+		max-width: 245px;
+	}
+	.gallery__list-item {
+		width: 25%;
+	}
+	.item {
+		padding: 50px 0 20px;
+	}
+	.item-description-side {
+		position: static;
+		max-width: 100%;
+	}
+	.item .back-to-city {
+		text-align: center;
+	}
+	.item .item-img .order-btn {
+		display: block;
+		margin: 20px auto;
+	}
+	.item .item-description .order-btn {
+		display: none;
+	}
+	.item .item-img {
+		height: auto;
+		margin: 0;
+	}
+	.item .item-img img {
+		position: static;
+		transform: none;
+	}
+	.site-header {
+		height: 50px;
+		.main-menu li a {
+			line-height: 50px;
+			&:after {
+				bottom: 10px;
+			}
+		}
+	}
+	.site-header .toggle-mobile-nav {
+		display: block;
+		float: right;
+	}
+	.site-header .main-menu {
+		position: absolute;
+		right: -180px;
+		top: 50px;
+		width: 180px;
+		background: $bgColor;
+		border-radius: 10px;
+		padding: 20px 55px 20px 20px;
+		transition: all .6s ease-in-out;
+		&.active {
+			right: 0;
+		}
+		li {
+			margin: 0 0 15px;
+			display: block;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			a {
+				line-height: normal;
+				&::after {
+					display: none;
+				}
+			}
+		}
+	}
+	.section__inner {
+		padding: 50px 0 20px;
+	}
+	body, html, .all-wrapper, .main-content {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	
+	.hero-name__wrapper {
+		padding: 20px 0;
+	}
+	.page-title {
+		font-size: 60px;
+		line-height: normal;
+	}
+	.tags-list {
+		height: auto;
+		position: static;
+		ul {
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			list-style-type: none;
+		}
+		#tags {
+			display: block !important;
+		}
+		&__inner {
+			height: auto;
+		}
+		li {
+			margin-bottom: 10px;
+		}
+		a {
+			font-size: 25px;
+			font-family: futura;
+		}
+	}
+	.video-bg {
+		margin: auto;
+		width: 100%;
+		right: auto;
+		top: 50px;
+		left: 0;
+		video {
+			width: 100%;
+		}
+	}
+	.locations .video-bg video {
+		display: none;
+	}
+	.page-title {
+		font-size: 48px;
+	}
+	.intro {
+		margin-top: 20px;
+	}
+	.hero-name__wrapper {
+		padding: 10px 0;
+	}
+	.tags-list a {
+		font-size: 20px;
+	}
+	.contact-list {
+		height: auto;
+		&__inner {
+			margin: auto;
+		}
+		li {
+			display: block;
+			float: none;
+			margin: 0 0 60px;
+			text-align: center;
+		}
+		.heading {
+			margin-bottom: 5px;
+		}
+	}
+	.section.home {
+		min-height: 360px;
+	}
+	.about-bg {
+		background-size: cover;
+		background-position: bottom -50px center;
+		z-index: -1;
+	}
+	.credits__list li {
+		width: 49%;
+	}
+	.city {
+		height: auto !important;
+	}
+	.city .section__inner {
+		height: auto;
+		min-height: 1px;
+	}
+	.city .city-img {
+		position: static;
+	}
+	.city .city-img.big-img {
+		display: none;
+	}
+	.city .city-img {
+		max-width: 100% !important;
+	}
+	.gallery__list-item {
+		width: 33.333%;
+	}
+
+}
+
+@media screen and (max-width: 550px) {
+	.link-to-city {
+		display: block;
+		width: 100%;
+		width: calc(100% - 30px);
+		height: 100%;
+		left: 50% !important;
+		top: 0 !important;
+		bottom: auto !important;
+		right: auto !important;
+		margin-left: calc(-50% + 15px);
+	}
+	.gallery__list-item {
+		width: 50%;
+	}
+	.item .back-to-city a {
+		font-size: 45px;
+	}
+	.item .item-description__inner h1 {
+		font-size: 25px;
+	}
+	.item .back-to-city a:before {
+		top: 8px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.credits__list li {
+		width: 100%;
+	}
+	.gallery__list-item {
+		width: 100%;
+		padding: 0;
+	}
+	.order-popup {
+		padding: 30px 20px;
+	}
+	.order-popup input, .order-popup textarea {
+		font-size: 20px;
+	}
+	.order-popup input[type=submit] {
+		margin-top: 20px;
+	}
+	.order-popup input {
+		height: 60px;
+	}
+	.order-popup .heading {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	.locations .video-bg {
+		width: 100%;
+		top: 50%;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		margin: auto;
+		transform: translateY(-50%);
+	}
+	.video-bg video {
+		display: none;
+	}
+	.video-bg .mobile-fallback {
+		display: block;
+	}
+}
+
+.hdn {
+	visibility: hidden;
+	opacity: 0;
+	transition: all .6s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

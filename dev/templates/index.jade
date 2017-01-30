@@ -1,0 +1,117 @@
+extends _layout
+block content
+	main.main-content
+		.fullpage-helper
+			.section.home(data-anchor="home")
+				.nner
+					.video-bg.animated
+						video(autoplay loop)
+							source(src="img/videobg.webm" type="video/webm")
+							source(src="img/videobg.ogg" type="video/ogg")
+							source(src="img/videobg.mp4" type="video/mp4")
+						.mobile-fallback
+							img(src="img/glob.gif", alt="")
+					.section__inner
+						.container
+							.hero-name__wrapper.animated
+								h1.page-title.animated Vladimir
+									span Gramadskikh
+							.intro.animated
+								p.intro__text Mollit anim id est laborum.Sed ut perspiciatis unde <br>omnis iste natus error sit voluptatem accusantium
+
+			.section.about(data-anchor="about")
+				.about-bg.animated
+				.section__inner
+					.container
+						.hero-name__wrapper.animated
+							h1.page-title.animated
+								span About
+						.intro.animated
+							p.intro__text Hi! <br><br>This project is to show you photos from far and not so far countries. In any case, pictures on this site do not pretend to be professional photos or photos for exhibition. This is my hobby, and this site is only one of ways to help me to transform photos from film into images. If you casually come across to my site, please have a look at it. It's pleasant to me, if someone except me like these pictures.<br><br>Sincerely,<br>Vlodimir Gramodskikh<br><br>vlodimir @gramadskikh.com
+
+			.section.locations(data-anchor="locations")
+				.video-bg.animated
+					video(autoplay loop)
+						source(src="img/videobg.webm" type="video/webm")
+						source(src="img/videobg.ogg" type="video/ogg")
+						source(src="img/videobg.mp4" type="video/mp4")
+					.mobile-fallback
+						img(src="img/glob.gif", alt="")
+				.section__inner
+					.container
+						.tags-list
+							.tags-list__inner
+							#tags
+								ul
+									li
+										a(href="#" data-weight="41") ARGENTINA
+									li
+										a(href="#" data-weight="42") INDONESIA SINGAPORE
+									li
+										a(href="#" data-weight="43") ICELAND
+									li
+										a(href="#" data-weight="44") HIMALAYA
+									li
+										a(href="#" data-weight="45") CHINA
+									li
+										a(href="#" data-weight="46") VENICE
+									li
+										a(href="#" data-weight="47") SILICON VALLEY
+									li
+										a(href="#" data-weight="48") AUSTRIA
+									li
+										a(href="#" data-weight="49") RUSSIA
+									li
+										a(href="#" data-weight="50") OAE ISLANDS
+									li
+										a(href="#" data-weight="51") GREECE
+									li
+										a(href="#" data-weight="52") PRAGUE
+									li
+										a(href="#" data-weight="53") CUBA
+							
+			.section.contacts(data-anchor="contacts")
+				.contacts-bg.animated
+				.section__inner
+					.container
+						.contact-list
+							ul.contact-list__inner
+								li.animated-fade
+									p.heading 28
+									p.description Countries was explored
+								li.animated-fade
+									p.heading 2
+									p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad
+								li.animated-fade
+									p.heading 40 250
+									p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. magna aliqua. Ut enim ad minim v
+			.section.credits(data-anchor="credits")
+				.section__inner
+					.container
+						.hero-name__wrapper.animated
+							h1.page-title.animated
+								span Credits
+						ul.credits__list
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+							li.animated-fade
+								p.heading Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati architecto molestias saepe molestiae exercitationem dolores illum nulla, soluta reiciendis pariatur porro ratione quibusdam iusto expedita ut eaque, labore ab.
+
+
+
+
+block inlineScripts

@@ -1,0 +1,87 @@
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.animated-fade {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated {
+	transition: transform 1s ease-in-out;
+}
+
+.animated-opacity {
+	transition: all 1s ease-in-out;
+}
+
+.page-title {
+	transition-delay: .5s;
+	transform: translateX(-20%);
+}
+
+.about-bg,
+.video-bg {
+	transform: translateX(100%);
+	transition-delay: .4s;
+}
+
+
+
+.hero-name__wrapper,
+.intro {
+	transform: translateX(-100%);
+}
+
+.active {
+	.hero-name__wrapper,
+	.intro,
+	.about-bg,
+	.video-bg,
+	.page-title {
+		transform: translateX(0);
+	}
+	.tags-list {
+		opacity: 1;
+	}
+	.contact-list li {
+	  -webkit-animation-name: fadeInUp;
+	  animation-name: fadeInUp;
+	}
+	.credits__list li {
+		-webkit-animation-name: fadeInUp;
+	  animation-name: fadeInUp;
+	}
+}
+
+
+
+
+
+

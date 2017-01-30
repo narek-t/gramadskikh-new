@@ -1,0 +1,141 @@
+extends _layout
+block content
+	main.main-content.city__wrap
+		.fullpage-helper
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated.slideInDown(href="#")
+							span Havana
+						.small-img.city-img.animated.slideInUp
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated.slideInUp
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Camagüey
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Santiago de Cuba
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Havana
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated.slideInDown(href="#")
+							span Havana
+						.small-img.city-img.animated.slideInUp
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated.slideInUp
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Camagüey
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Santiago de Cuba
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+			.city(style="background-image: url(img/city1-bg.png)")
+				.section__inner
+					.container
+						a.link-to-city.animated(href="#")
+							span Havana
+						.small-img.city-img.animated
+							img(src="img/city-small.jpg", alt="")
+						.big-img.city-img.animated
+							img(src="img/city-big.jpg", alt="")
+
+
+
+block inlineScripts
+	script.
+		$(function() {
+			$.scrollify({
+				section : ".city",
+				scrollbars: true,
+				scrollSpeed: 800,
+				easing: "easeInQuad",
+				before: function(index, sections) {
+					for(var i = 0; i< sections.length; i++) {
+						sections[i].removeClass('active');
+					}
+					sections[index].addClass('active');
+
+					if(sections[index].hasClass('city1')) {
+						sections[index].find('.small-img').addClass('slideInUp');
+						sections[index].find('.big-img').addClass('slideInUp');
+						sections[index].find('.link-to-city').addClass('slideInDown');
+						setTimeout(function() {
+							sections[index].find('.small-img').removeClass('slideInUp');
+							sections[index].find('.big-img').removeClass('slideInUp');
+							sections[index].find('.link-to-city').removeClass('slideInDown');
+						}, 2000);
+					}else if(sections[index].hasClass('city2')) {
+						sections[index].find('.big-img').addClass('slideInLeft');
+						sections[index].find('.small-img').addClass('slideInRight');
+						sections[index].find('.link-to-city').addClass('slideInLeft');
+
+						setTimeout(function() {
+							sections[index].find('.big-img').removeClass('slideInLeft');
+							sections[index].find('.small-img').removeClass('slideInRight');
+							sections[index].find('.link-to-city').removeClass('slideInLeft');
+						}, 2000);
+					}else if(sections[index].hasClass('city3')) {
+						sections[index].find('.big-img').addClass('slideInDown');
+						sections[index].find('.small-img').addClass('slideInUp');
+						sections[index].find('.link-to-city').addClass('slideInDown');
+
+						setTimeout(function() {
+							sections[index].find('.big-img').removeClass('slideInDown');
+							sections[index].find('.small-img').removeClass('slideInUp');
+							sections[index].find('.link-to-city').removeClass('slideInDown');
+						}, 2000);
+					}else if(sections[index].hasClass('city4')) {
+						sections[index].find('.big-img').addClass('slideInLeft');
+						sections[index].find('.small-img').addClass('slideInRight');
+						sections[index].find('.link-to-city').addClass('slideInDown');
+
+						setTimeout(function() {
+							sections[index].find('.big-img').removeClass('slideInLeft');
+							sections[index].find('.small-img').removeClass('slideInRight');
+							sections[index].find('.link-to-city').removeClass('slideInDown');
+						}, 2000);
+					}
+					
+					
+				},
+			})
+		});
+		if($(window).width() < 768) {
+			$.scrollify.disable()
+		}

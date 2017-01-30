@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <title>Document</title>
+  </head>
+  <body class="home">
+    <div class="loader"></div>
+    <div class="all-wrapper">
+      <header class="site-header slideInDown">
+        <div class="container">
+          <nav class="top-menu">
+            <button class="toggle-mobile-nav animated"><span></span><span></span><span></span></button>
+            <ul class="main-menu">
+              <li data-menuanchor="home" class="active"><a href="#home">HOME</a></li>
+              <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+              <li data-menuanchor="locations"><a href="#locations">LOCATIONS</a></li>
+              <li data-menuanchor="contacts"><a href="#contacts">CONTACT</a></li>
+              <li data-menuanchor="credits"><a href="#credits">CREDITS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-content city__wrap">
+        <div class="fullpage-helper">
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated slideInDown"><span>Havana</span></a>
+                <div class="small-img city-img animated slideInUp"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated slideInUp"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Camagüey</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Santiago de Cuba</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Havana</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated slideInDown"><span>Havana</span></a>
+                <div class="small-img city-img animated slideInUp"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated slideInUp"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Camagüey</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Santiago de Cuba</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+          <div style="background-image: url(img/city1-bg.png)" class="city">
+            <div class="section__inner">
+              <div class="container"><a href="#" class="link-to-city animated"><span>Havana</span></a>
+                <div class="small-img city-img animated"><img src="img/city-small.jpg" alt=""/></div>
+                <div class="big-img city-img animated"><img src="img/city-big.jpg" alt=""/></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="site-footer">
+      <div id="popup-dialog" class="order-popup mfp-hide zoom-anim-dialog">
+        <p class="heading">dolor sit amet</p>
+        <form>
+          <input type="text" placeholder="NAME"/>
+          <input type="email" placeholder="E-MAIL"/>
+          <input type="tel" placeholder="PHONE"/>
+          <textarea placeholder="MESSAGE"></textarea>
+          <input type="submit" value="ORDER"/>
+        </form>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/lib/lib.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      $(function() {
+      	$.scrollify({
+      		section : ".city",
+      		scrollbars: true,
+      		scrollSpeed: 800,
+      		easing: "easeInQuad",
+      		before: function(index, sections) {
+      			for(var i = 0; i< sections.length; i++) {
+      				sections[i].removeClass('active');
+      			}
+      			sections[index].addClass('active');
+      
+      			if(sections[index].hasClass('city1')) {
+      				sections[index].find('.small-img').addClass('slideInUp');
+      				sections[index].find('.big-img').addClass('slideInUp');
+      				sections[index].find('.link-to-city').addClass('slideInDown');
+      				setTimeout(function() {
+      					sections[index].find('.small-img').removeClass('slideInUp');
+      					sections[index].find('.big-img').removeClass('slideInUp');
+      					sections[index].find('.link-to-city').removeClass('slideInDown');
+      				}, 2000);
+      			}else if(sections[index].hasClass('city2')) {
+      				sections[index].find('.big-img').addClass('slideInLeft');
+      				sections[index].find('.small-img').addClass('slideInRight');
+      				sections[index].find('.link-to-city').addClass('slideInLeft');
+      
+      				setTimeout(function() {
+      					sections[index].find('.big-img').removeClass('slideInLeft');
+      					sections[index].find('.small-img').removeClass('slideInRight');
+      					sections[index].find('.link-to-city').removeClass('slideInLeft');
+      				}, 2000);
+      			}else if(sections[index].hasClass('city3')) {
+      				sections[index].find('.big-img').addClass('slideInDown');
+      				sections[index].find('.small-img').addClass('slideInUp');
+      				sections[index].find('.link-to-city').addClass('slideInDown');
+      
+      				setTimeout(function() {
+      					sections[index].find('.big-img').removeClass('slideInDown');
+      					sections[index].find('.small-img').removeClass('slideInUp');
+      					sections[index].find('.link-to-city').removeClass('slideInDown');
+      				}, 2000);
+      			}else if(sections[index].hasClass('city4')) {
+      				sections[index].find('.big-img').addClass('slideInLeft');
+      				sections[index].find('.small-img').addClass('slideInRight');
+      				sections[index].find('.link-to-city').addClass('slideInDown');
+      
+      				setTimeout(function() {
+      					sections[index].find('.big-img').removeClass('slideInLeft');
+      					sections[index].find('.small-img').removeClass('slideInRight');
+      					sections[index].find('.link-to-city').removeClass('slideInDown');
+      				}, 2000);
+      			}
+      			
+      			
+      		},
+      	})
+      });
+      if($(window).width() < 768) {
+      	$.scrollify.disable()
+      }
+    </script>
+  </body>
+</html>
